@@ -32,12 +32,33 @@
                 <button type="button">Continue With Email</button>
             </div>
             <div class="sign-up">
-                <p>Don't have an account? <a href="your-signup-url">Sign up.</a></p>
+                <p>Don't have an account? <a href="#" id="sign-up-link">Sign up.</a></p>
             </div>
         </div>
         <div class="image">
             <img src="path-to-book-image" alt="Masonic Book">
         </div>
     </div>
+
+    <div id="signup-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Create Account</h2>
+            <form action="your-signup-endpoint" method="POST">
+                <label for="signup-email">Email</label>
+                <input type="email" id="signup-email" name="email" required>
+
+                <label for="signup-password">Password</label>
+                <input type="password" id="signup-password" name="password" required>
+
+                <label for="signup-confirm-password">Confirm Password</label>
+                <input type="password" id="signup-confirm-password" name="confirm-password" required>
+
+                <button type="submit">Sign up</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
