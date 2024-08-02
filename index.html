@@ -1,24 +1,43 @@
 <!DOCTYPE html>
-<html lng="en">
-  <head>
-    <link rel="stylesheet" href="stlye.css" />
-    <title>Loginpage</title>
-  </head>
-  <body> {
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slate Maker - Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-form">
+            <div class="logo">
+                <img src="path-to-logo-image" alt="Masonic Logo">
+            </div>
+            <h1>Slate Maker</h1>
+            <p>Made by Masons, for Masons</p>
+            <form action="your-login-endpoint" method="POST">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
 
-    <img src="login.jpg" alt="login">
-    <div class="feild-group">
-        <input type="text" name="username" class="input-feild" placeholder="E-Mail" autocomplete="off">
-        <div class="icon">
-          <i class="fa fa-user" aria-hidden="true"> </i>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+
+                <div class="remember-me">
+                    <input type="checkbox" id="remember-me" name="remember-me" checked>
+                    <label for="remember-me">Remember Me</label>
+                </div>
+
+                <button type="submit">Log in</button>
+            </form>
+            <div class="continue-with-email">
+                <button type="button">Continue With Email</button>
+            </div>
+            <div class="sign-up">
+                <p>Don't have an account? <a href="your-signup-url">Sign up.</a></p>
+            </div>
+        </div>
+        <div class="image">
+            <img src="path-to-book-image" alt="Masonic Book">
         </div>
     </div>
-    <div class="feild-group">
-        <input type="password" name="password" class="input-feild" placeholder="Password" autocomplete="off">
-        <div class="icon">
-          <i class="fa fa-user" aria-hidden="true"> </i>
-        </div>
-    </div>
-  }
-  </body>
+</body>
 </html>
