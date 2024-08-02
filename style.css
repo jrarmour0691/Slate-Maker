@@ -1,9 +1,108 @@
 body {
-  margin: 0;
-  padding: 0;
-  background-image: url("login.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-positon: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.container {
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.login-form {
+    padding: 20px;
+    max-width: 400px;
+    background-color: #f8f9fa;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+p {
+    color: #6c757d;
+    margin: 5px 0 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    color: #6c757d;
+}
+
+input[type="email"],
+input[type="password"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.remember-me input {
+    margin-right: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.continue-with-email button {
+    background-color: #28a745;
+    margin-top: 10px;
+}
+
+.continue-with-email button:hover {
+    background-color: #218838;
+}
+
+.sign-up p {
+    margin-top: 20px;
+}
+
+.sign-up a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.sign-up a:hover {
+    text-decoration: underline;
+}
+
+.image img {
+    width: 400px;
+    height: auto;
+    object-fit: cover;
 }
